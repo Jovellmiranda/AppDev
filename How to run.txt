@@ -1,0 +1,15 @@
+How to Activate:
+.venv\Scripts\Activate.ps1
+
+How to Deactivate / Turn off: 
+Deactivate
+
+
+How to Run the program:
+python manage.py runserver
+http://127.0.0.1:8000/admin/
+http://127.0.0.1:8000/
+http://127.0.0.1:8000/login 
+
+Create Account:
+python manage.py createsuperuser
