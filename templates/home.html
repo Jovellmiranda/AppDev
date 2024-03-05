@@ -2,10 +2,14 @@
 {% block title %} Home {% endblock %}
 {% block content %}
 {% if user.is_authenticated %}
-Hi {{user.username}}
-<a href= "{% url 'logout' %}">Log out</a>
+Hi {{user.username}}!
+<form method="post" action="{% url 'logout' %}">
+    {% csrf_token %}
+    <button type="submit">logout</button>
+</form>
 {% else %} 
-<p> you are not logged in</p>
+
 <a href = "{% url 'login' %}"> Log In </a>
+<a href = 
 {% endif %}
 {% endblock %}
