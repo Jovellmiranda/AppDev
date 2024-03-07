@@ -1,4 +1,6 @@
 
+
+Terminals 
 py -3 -m venv .venv
 
 
@@ -12,10 +14,6 @@ Deactivate
 How to Run the program:
 python manage.py runserver
 http://127.0.0.1:8000/admin/
-Admin Account:
-admin
-admin12345
-
 http://127.0.0.1:8000/signup
 http://127.0.0.1:8000/accounts/login
 
@@ -25,3 +23,6 @@ python manage.py createsuperuser
 Admin Account:
 admin
 admin12345
+
+pc
+12345Fin
