@@ -12,8 +12,6 @@ Admin Account:
 admin
 admin12345
 
-
-
 http://127.0.0.1:8000/signup
 http://127.0.0.1:8000/accounts/login
 
