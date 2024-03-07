@@ -1,3 +1,7 @@
+
+py -3 -m venv .venv
+
+
 How to Activate:
 .venv\Scripts\Activate.ps1
 
