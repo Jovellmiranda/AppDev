@@ -1,13 +1,22 @@
-
-
 {% extends 'base.html' %}
-{% block title %} Login {% endblock %}
+{% block title %} Home {% endblock %}
 {% block content %}
-<h2> Log In </h2>
+    <h2>Welcome to the Login Project!</h2>
 
-<form method ="post">
-    {% csrf_token %}
-    {{form.as_p}}
-    <button type="submit"> Log in </button>
-</form>
-{% endblock%}
+    <h3>Login</h3>
+    <form method="post" action="{% url 'login' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Log in</button>
+    </form>
+
+    <button id="signupButton">Sign up</button>
+
+    <script>
+
+        document.getElementById("signupButton").addEventListener("click", function () {
+
+            window.location.href = "http://127.0.0.1:8000/signup/";
+        });
+    </script>
+{% endblock %}
